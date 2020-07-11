@@ -18,12 +18,12 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.hotkeys
-      .addShortcut({ keys: 'meta.z', description: 'Add Widget' })
+      .addShortcut({ keys: 'shift.Z', description: 'Add Widget' })
       .pipe(takeUntil(this.unsubscribe$), take(2))
       .subscribe(console.log);
 
     this.hotkeys
-      .addShortcut({ keys: 'meta.j', description: 'Open Settings' })
+      .addShortcut({ keys: 'shift.J', description: 'Open Settings' })
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe(console.log);
   }
