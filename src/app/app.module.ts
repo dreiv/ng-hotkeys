@@ -17,7 +17,7 @@ import { HotkeysDialogComponent } from './hotkeys-dialog/hotkeys-dialog.componen
     MatCommonModule,
     MatDialogModule
   ],
-  providers: [],
+  entryComponents: [HotkeysDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

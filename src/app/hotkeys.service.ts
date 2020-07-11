@@ -30,7 +30,7 @@ export class HotkeysService implements OnDestroy {
   ) {
     this.unsubscribe$ = new Subject();
 
-    this.addShortcut({ keys: 'shift.?' }).subscribe(() => {
+    this.addShortcut({ keys: 'shift.G' }).subscribe(() => {
       this.openHelpModal();
     });
   }

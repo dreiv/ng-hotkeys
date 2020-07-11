@@ -7,7 +7,9 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./hotkeys-dialog.component.css']
 })
 export class HotkeysDialogComponent {
-  hotkeys = Array.from(this.data);
+  hotkeys: any[];
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {}
+  constructor(@Inject(MAT_DIALOG_DATA) public data: any) {
+    this.hotkeys = Array.from(this.data);
+  }
 }
